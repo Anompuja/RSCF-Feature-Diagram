@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="autolayoutconstraints" value="false"/>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showconstraints" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="vertical"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="4"/>
+	</properties>
+	<struct>
+		<and abstract="true" mandatory="true" name="Smart_Crop_Farming">
+			<and abstract="true" mandatory="true" name="Goals">
+				<graphics key="collapsed" value="false"/>
+				<feature mandatory="true" name="Productivity_Improvement"/>
+				<feature name="Profitability"/>
+				<feature mandatory="true" name="Sustainability"/>
+				<feature mandatory="true" name="Cost_Reduction"/>
+				<feature mandatory="true" name="Resource_Efficiency"/>
+				<feature mandatory="true" name="Diseases_Prevention"/>
+				<feature mandatory="true" name="Risk_Management"/>
+				<feature mandatory="true" name="Harvest_Quality"/>
+				<feature mandatory="true" name="Threat_Detection"/>
+				<feature mandatory="true" name="Environmental_Protection"/>
+				<feature mandatory="true" name="Food_Security"/>
+				<feature mandatory="true" name="Yield_Optimization"/>
+			</and>
+			<and abstract="true" mandatory="true" name="Farm_Activities">
+				<graphics key="collapsed" value="false"/>
+				<and abstract="true" name="Preparation_Phase">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Crop_Selection"/>
+					<feature name="Soil_Testing"/>
+					<feature name="Soil_Analysis"/>
+					<feature name="Plowing"/>
+					<feature name="Soil_Amendment"/>
+					<feature name="Cleaning"/>
+				</and>
+				<and abstract="true" name="Production_Phase">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Planting"/>
+					<feature name="Seeding"/>
+					<feature name="Transplanting"/>
+					<feature name="Precision_Planting"/>
+					<feature mandatory="true" name="Irrigation"/>
+					<feature mandatory="true" name="Auto_Irrigation"/>
+					<feature name="Irrigation_Scheduling"/>
+					<feature mandatory="true" name="Fertilization"/>
+					<feature name="Soil_Fertility"/>
+					<feature name="Nutrient_Dosing"/>
+					<feature mandatory="true" name="Plant_Disease_Control"/>
+					<feature mandatory="true" name="Pest_Control"/>
+					<feature mandatory="true" name="Weed_Control"/>
+					<feature name="Weed_Removal"/>
+					<feature mandatory="true" name="Spraying"/>
+				</and>
+				<and abstract="true" name="Controlling_and_Monitoring_Phase">
+					<graphics key="collapsed" value="false"/>
+					<and abstract="true" name="Monitoring">
+						<graphics key="collapsed" value="false"/>
+						<feature name="Crop_Scouting"/>
+						<feature mandatory="true" name="Crop_Health_Monitoring"/>
+						<feature name="Physical_Monitoring"/>
+						<feature mandatory="true" name="Environmental_Monitoring"/>
+					</and>
+					<feature name="Recording"/>
+				</and>
+				<and abstract="true" name="Harvest_Phase">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="Yield_Prediction"/>
+					<feature mandatory="true" name="Optimal_Timing"/>
+					<feature mandatory="true" name="Harvesting"/>
+					<feature name="Continuous_Yield_Monitoring"/>
+				</and>
+				<and abstract="true" name="Post_Harvest_Phase">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Drying"/>
+					<feature name="Storage"/>
+					<feature name="Processing"/>
+					<feature name="Milling"/>
+				</and>
+				<and abstract="true" name="Supply_Chain_Activity">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Supply_Chain_Management"/>
+					<feature name="Market_Condition_Analysis"/>
+					<feature name="Demand_Forecast"/>
+					<feature name="Crop_Pricing"/>
+				</and>
+			</and>
+			<and abstract="true" mandatory="true" name="Field_Data">
+				<graphics key="collapsed" value="false"/>
+				<feature mandatory="true" name="Weather_Station"/>
+				<and abstract="true" mandatory="true" name="Soil_Data">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="Soil_Moisture"/>
+					<feature mandatory="true" name="Soil_Condition"/>
+					<feature name="pH_Level"/>
+					<feature name="Nitrogen_Content"/>
+					<feature name="Organic_Carbon"/>
+				</and>
+				<and abstract="true" mandatory="true" name="Spatial_Data">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="Location_Data"/>
+					<feature mandatory="true" name="NDVI"/>
+					<feature mandatory="true" name="Vegetation_Index"/>
+					<feature name="Orthophoto"/>
+					<feature name="NDVI_Map"/>
+				</and>
+				<and abstract="true" name="Biological_Attributes">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="Productivity"/>
+					<feature mandatory="true" name="Health"/>
+					<feature name="Size"/>
+					<feature name="Behaviour"/>
+					<feature name="Plant_Height"/>
+					<feature name="Grain_Yield"/>
+					<and abstract="true" name="Plant_Morphology">
+						<graphics key="collapsed" value="false"/>
+						<feature name="Panicle_Length"/>
+						<feature name="Tiller_Count"/>
+						<feature name="Leaf_Counting"/>
+						<feature mandatory="true" name="Discoloration_Patterns"/>
+					</and>
+				</and>
+				<and abstract="true" mandatory="true" name="Occurrence_Data">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Animal_Occurrences"/>
+					<feature mandatory="true" name="Weed_Occurrences"/>
+					<feature mandatory="true" name="Pest_Prevalence"/>
+				</and>
+				<and abstract="true" mandatory="true" name="Atmospheric_Data">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Temperature"/>
+					<feature name="Humidity"/>
+					<feature name="Rainfall"/>
+					<feature name="Rain_Forecast"/>
+					<feature name="Wind_Speed"/>
+					<feature mandatory="true" name="Light_Intensity"/>
+					<feature mandatory="true" name="Atmospheric_Pressure"/>
+					<feature mandatory="true" name="Gas_Concentration"/>
+					<feature mandatory="true" name="Leaf_Wetness"/>
+					<feature mandatory="true" name="Environmental_Sensors"/>
+				</and>
+				<and abstract="true" name="Water_Data">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Water_Height"/>
+					<feature name="Water_Quality"/>
+				</and>
+				<and abstract="true" name="Nutrient_Data">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Nitrogen"/>
+					<feature name="Phosphorus"/>
+					<feature name="Potassium"/>
+					<feature name="Sulfur"/>
+					<feature name="Silicon"/>
+				</and>
+			</and>
+			<and abstract="true" mandatory="true" name="Adopted_Technologies">
+				<graphics key="collapsed" value="false"/>
+				<and abstract="true" name="AI_and_Analytics">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="Statistical_Model"/>
+					<feature mandatory="true" name="Clustering"/>
+					<feature name="Data_Mining"/>
+					<or abstract="true" mandatory="true" name="Machine_Learning">
+						<graphics key="collapsed" value="false"/>
+						<feature name="Random_Forest"/>
+						<feature name="SVM"/>
+						<feature name="Decision_Tree"/>
+						<feature name="KNN"/>
+						<feature name="XGBoost"/>
+						<feature name="Gradient_Boosting"/>
+					</or>
+					<and abstract="true" name="Deep_Learning">
+						<graphics key="collapsed" value="false"/>
+						<feature name="BiLSTM"/>
+						<feature name="RNN"/>
+						<feature mandatory="true" name="MLP"/>
+						<feature name="Agro_Deep_Learning"/>
+						<feature name="Mango_YOLO"/>
+					</and>
+					<and abstract="true" name="Regression_Models">
+						<graphics key="collapsed" value="false"/>
+						<feature name="Polynomial_Regression"/>
+						<feature mandatory="true" name="Multiple_Linear_Regression"/>
+					</and>
+					<and abstract="true" name="Big_Data_and_Image_Processing">
+						<graphics key="collapsed" value="false"/>
+						<feature name="MapReduce"/>
+						<feature name="Image_Annotation"/>
+						<feature name="Pixel_Based"/>
+						<feature name="Object_Based"/>
+					</and>
+				</and>
+				<and abstract="true" mandatory="true" name="Sensing_Technologies">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="UAV_Drone"/>
+					<feature mandatory="true" name="Satellite"/>
+					<feature name="GNSS"/>
+					<feature mandatory="true" name="Moisture_Sensor"/>
+					<or abstract="true" name="Camera">
+						<graphics key="collapsed" value="false"/>
+						<feature name="Hyperspectral_Camera"/>
+						<feature name="Thermal_Camera"/>
+						<feature name="Multispectral_Camera"/>
+						<feature name="RGB_Camera"/>
+					</or>
+				</and>
+				<and abstract="true" name="Smart_Machinery">
+					<graphics key="collapsed" value="false"/>
+					<feature name="UGV"/>
+					<feature name="Autonomous_Tractors"/>
+					<feature name="Robotic_Harvesters"/>
+				</and>
+				<or abstract="true" mandatory="true" name="User_Interface">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Mobile_Application"/>
+					<feature name="Web_Application"/>
+				</or>
+				<and abstract="true" name="Decision_Support_Systems">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="Expert_System"/>
+					<feature name="OFIS"/>
+					<feature name="Forward_Chaining"/>
+				</and>
+				<and abstract="true" name="FMIS_Tools">
+					<graphics key="collapsed" value="false"/>
+					<feature name="Akkerweb"/>
+					<feature name="Agrivi_FieldView"/>
+				</and>
+			</and>
+			<and abstract="true" mandatory="true" name="Architecture_Design">
+				<graphics key="collapsed" value="false"/>
+				<and abstract="true" mandatory="true" name="Communication_Protocols">
+					<graphics key="collapsed" value="false"/>
+					<feature name="RFID"/>
+					<feature mandatory="true" name="WSN"/>
+					<feature mandatory="true" name="WiFi"/>
+					<feature mandatory="true" name="Cellular"/>
+					<feature name="Sigfox"/>
+					<feature mandatory="true" name="MQTT"/>
+					<feature mandatory="true" name="HTTP_HTTPS"/>
+					<feature name="I2C"/>
+					<or abstract="true" name="Machine_Protocols">
+						<graphics key="collapsed" value="false"/>
+						<feature name="ISOBUS"/>
+						<feature name="CANBUS"/>
+					</or>
+					<or abstract="true" name="WSN_Protocols">
+						<graphics key="collapsed" value="false"/>
+						<feature name="LoRaWAN"/>
+						<feature name="ZigBee"/>
+					</or>
+				</and>
+				<and abstract="true" mandatory="true" name="Computing_Infrastructure">
+					<graphics key="collapsed" value="false"/>
+					<feature mandatory="true" name="Cloud_Computing"/>
+					<feature mandatory="true" name="Edge_Computing"/>
+					<feature name="Local_Host"/>
+				</and>
+				<and abstract="true" name="Hardware_System">
+					<graphics key="collapsed" value="false"/>
+					<feature name="PCB"/>
+					<feature name="Mote_Sensor"/>
+					<feature name="PC"/>
+				</and>
+			</and>
+			<and abstract="true" name="Security_and_Privacy">
+				<graphics key="collapsed" value="false"/>
+				<feature mandatory="true" name="Cryptography"/>
+				<feature name="Digital_Signature"/>
+				<feature name="Homomorphic_Encryption"/>
+				<feature name="Federated_Learning"/>
+				<feature name="Differential_Privacy"/>
+				<feature name="Lightweight_Cryptography"/>
+			</and>
+		</and>
+	</struct>
+</featureModel>
