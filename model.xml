@@ -110,10 +110,10 @@
 				</and>
 				<and abstract="true" name="Biological Attributes">
 					<graphics key="collapsed" value="false"/>
-					<feature mandatory="true" name="Productivity"/>
-					<feature mandatory="true" name="Health"/>
-					<feature name="Size"/>
-					<feature name="Behaviour"/>
+					<feature abstract="true" mandatory="true" name="Productivity"/>
+					<feature abstract="true" mandatory="true" name="Health"/>
+					<feature abstract="true" name="Size"/>
+					<feature abstract="true" name="Behaviour"/>
 					<feature name="Plant Height"/>
 					<feature name="Grain Yield"/>
 					<and abstract="true" name="Plant Morphology">
