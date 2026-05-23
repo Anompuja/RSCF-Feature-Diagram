@@ -199,7 +199,7 @@
 					<feature mandatory="true" name="UAV Drone"/>
 					<feature mandatory="true" name="Satellite"/>
 					<feature name="GNSS"/>
-					<feature mandatory="true" name="Moisture Sensor"/>
+					<feature mandatory="true" name="IOT Sensors"/>
 					<or abstract="true" name="Camera">
 						<graphics key="collapsed" value="false"/>
 						<feature name="Hyperspectral Camera"/>
@@ -264,6 +264,7 @@
 					<feature name="PCB"/>
 					<feature name="Mote Sensor"/>
 					<feature name="PC"/>
+					<feature name="IOT Devices"/>
 				</and>
 			</and>
 			<and abstract="true" name="Security and Privacy">
