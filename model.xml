@@ -2,7 +2,8 @@
 <featureModel>
 	<properties>
 		<graphics key="autolayoutconstraints" value="false"/>
-		<graphics key="legendautolayout" value="true"/>
+		<graphics key="legendposition" value="978,31"/>
+		<graphics key="legendautolayout" value="false"/>
 		<graphics key="showconstraints" value="true"/>
 		<graphics key="showshortnames" value="false"/>
 		<graphics key="layout" value="vertical"/>
@@ -179,7 +180,6 @@
 						<feature name="RNN"/>
 						<feature mandatory="true" name="MLP"/>
 						<feature name="Agro Deep Learning"/>
-						<feature name="Mango YOLO"/>
 					</and>
 					<and abstract="true" name="Regression Models">
 						<graphics key="collapsed" value="false"/>
@@ -236,7 +236,6 @@
 				<and abstract="true" mandatory="true" name="Communication Protocols">
 					<graphics key="collapsed" value="false"/>
 					<feature name="RFID"/>
-					<feature mandatory="true" name="WSN"/>
 					<feature mandatory="true" name="WiFi"/>
 					<feature mandatory="true" name="Cellular"/>
 					<feature name="Sigfox"/>
